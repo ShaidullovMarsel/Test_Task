@@ -1,0 +1,86 @@
+.header {
+    padding-top: 32px;
+    &__wrapper {
+        display: flex;
+        &-logo {
+            margin-right: 28px;
+        }
+        &-upload {
+            margin-right: 20px;
+            .button__upload {
+              width: 138px;
+              height: 35px;
+              border-radius: 10px;
+              box-shadow: 1px 5px 23px 0px rgba(35, 35, 35, 0.08);
+              background: rgb(255, 255, 255);
+              cursor: pointer;
+            }
+            .button__upload:hover{
+              background: rgb(244, 241, 241);
+            }
+        }
+        &-folder {
+          margin-right: 20px;
+          .button__folder {
+            width: 138px;
+            height: 35px;
+            border-radius: 10px;
+            box-shadow: 1px 5px 23px 0px rgb(253, 253, 253);
+            background: rgb(255, 255, 255);
+            cursor: pointer;
+          }
+          .button__folder:hover{
+            background: rgb(244, 241, 241);
+          }
+        }
+        &-resycle {
+          margin-right: 300px;
+          .button__resycle {
+            width: 138px;
+            height: 35px;
+            border-radius: 10px;
+            box-shadow: 1px 5px 23px 0px rgba(35, 35, 35, 0.08);
+            background: rgb(255, 255, 255);
+            cursor: pointer;
+          }
+          .button__resycle:hover{
+            background: rgb(244, 241, 241);
+          }
+        }
+        &-input {
+          padding-right: 30px;
+          .input-input {
+            visibility: hidden;
+            height: 37px;
+          }
+        }
+        &-search {
+            margin-right: 24px;
+            .button__search {
+              width: 40px;
+              height: 40px;
+              border-radius: 20px;
+              background: rgb(255, 255, 255);
+              cursor: pointer;
+            }
+            .button__search:hover{
+              background: rgb(244, 241, 241);
+            }
+          }
+        &-wrapper {
+            display: flex;
+            width: 300px;
+            margin-right: 24px;
+            height: 35px;
+            border-radius: 10px;
+            margin-top: 3px;
+            .button__wrapper {
+              padding-left: 10px;
+              padding-right: 10px;
+              border-radius: 10px;
+              background: rgb(255, 255, 255);
+            }
+        }
+        
+    }
+}

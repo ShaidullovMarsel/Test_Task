@@ -1,0 +1,85 @@
+.files {
+    padding-top: 50px;   
+    .container {
+        position: relative;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        .dropdown {
+            width: 187px;
+            position: relative;
+            z-index: 5;
+            margin: 0 10px;
+          }
+          #dropdownBtnSort{
+            left: 1200px;
+            width: 187px;
+            text-align: left;
+            padding: 10px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            position: relative;
+            --active-col: #302E2E;
+          }
+          #dropdownBtnSort:hover{
+            background: rgb(244, 241, 241);
+          }
+          #dropdownBtnSort i{
+            float: right;
+            transform: rotate(0deg);
+          }
+          
+          #dropdownBtnSort::before {
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: calc(100% - 20px);
+            background-color: var(--active-sort-col);
+            left: 10px;
+            top: 2px;
+          }
+          
+          #dropdownBtnFilter::before {
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: calc(100% - 20px);
+            background-color: var(--active-filter-col);
+            left: 10px;
+            top: 2px;
+          }
+          
+          #dropdownSortOptions{
+            position: absolute;
+            left: 1200px;
+            width: 187px;
+            margin-top: 3px;
+            display: none;
+            background-color: #ffffff;
+            flex-direction: column;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid rgb(0, 0, 0);
+          }
+
+          .sortOption{
+            padding: 10px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+          }
+          .sortOption span{
+           float: right;
+          }
+          
+          .sortOption:hover{
+            background: rgb(244, 241, 241);
+          }
+          
+
+    }
+}
