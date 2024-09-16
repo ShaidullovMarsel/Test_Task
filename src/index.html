@@ -11,13 +11,15 @@
 </head>
 <body>
     <section class="header">
+        
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__wrapper-logo">
                     <img src="./img/LOGO.svg" alt="">
                 </div>
+                
                 <div class="header__wrapper-upload">
-                    <button class="button__upload">
+                    <button id="upload" class="button__upload">
                         <div class="upload-img"><img src="./icons/upload.svg" alt="">
                     </div>Upload</button>
                 </div>
@@ -70,6 +72,7 @@
 
                 </div>
             </div>
+            <input type="file" id="files" name="files[]" multiple />
         </div>
     </section>
     <script src="./js/script.js"></script>

@@ -11,6 +11,7 @@ const dropdownSortOptions = document.getElementById('dropdownSortOptions');
 const sortOptions = document.querySelectorAll('.sortOption');
 const buttonSearch = document.getElementById('button__search');
 const search = document.getElementById('input-input');
+const upload = document.getElementById('upload');
 
 
 
@@ -28,22 +29,22 @@ let data = [
   {   name: "new file",
       type: "File",
       size: 34,
-      date: 'Sun Sep 12 2024 17:34:45 GMT+0300 (Москва, стандартное время)'
+      date: 1726482568411
   },
     { name: "666",
       type: "Folder",
       size: 12,
-      date: 'Sun Sep 14 2024 17:34:45 GMT+0300 (Москва, стандартное время)'
+      date: 1726482568411
   },
   {   name: "New file 2",
       type: "File",
       size: 65,
-      date: 'Sun Sep 11 2024 21:34:45 GMT+0300 (Москва, стандартное время)'
+      date: 1726482568411
   },
   {   name: "777",
       type: "Folder",
       size: 22,
-      date: 'Sun Sep 13 2024 16:34:45 GMT+0300 (Москва, стандартное время)'
+      date: 1726482568411
   },
 ]
 
@@ -51,10 +52,10 @@ let data = [
 const renderList = (arr) => {
   document.getElementById('list').innerHTML = ''
   for(let obj of arr){
-    if (obj.type == "File")
+    if (obj.type == "Folder")
     document.getElementById('list').innerHTML += `
     <div class="item__img">
-            <img src="./img/file.svg" alt="">
+            <img src="./img/folder.svg" alt="">
             <div class="item__text">
                 ${obj.name}
             </div>
@@ -63,7 +64,7 @@ const renderList = (arr) => {
     else {
       document.getElementById('list').innerHTML += `
      <div class="item__img">
-            <img src="./img/folder.svg" alt="">
+            <img src="./img/file.svg" alt="">
             <div class="item__text">
                 ${obj.name}
             </div>
@@ -160,3 +161,24 @@ search.addEventListener("input", (event) => {
   showList(data);
 });
 
+function printFiles(e) {  
+  const files = e.target.files;
+  for (let i = 0; i < files.length; i++) {
+      const file = files[i]; 
+      let filename = file.name;
+      let filetype = file.type;
+      let filesize = file.size;   
+      let filedate = Date.now();  
+      data.push({name: filename.length <= 9 ? filename : filename.slice(0, 9) + "...",
+        type: filetype,
+        size: filesize,
+        date: filedate});
+        console.log(data);
+        renderList(data);
+  } 
+}
+document.getElementById("files").addEventListener("change", printFiles);
+
+upload.addEventListener('click', () => {
+    document.getElementById("files").click();
+})
