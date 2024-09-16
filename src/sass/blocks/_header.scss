@@ -3,64 +3,125 @@
     &__wrapper {
         display: flex;
         &-logo {
+            margin-top: 8px;
             margin-right: 28px;
         }
         &-upload {
             margin-right: 20px;
             .button__upload {
+              color: rgb(35, 35, 35);
+              font-family: Montserrat;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 20px;
+              letter-spacing: 7%;
+              text-align: left;
+              display: flex;
+              justify-content: center;
+              align-items: center;
               width: 138px;
-              height: 35px;
+              height: 40px;
+              border-color: rgba(255, 255, 255, 0);
               border-radius: 10px;
               box-shadow: 1px 5px 23px 0px rgba(35, 35, 35, 0.08);
               background: rgb(255, 255, 255);
               cursor: pointer;
+              .upload-img {
+                margin-right: 10px;
+                margin-top: 5px;
+              }
             }
             .button__upload:hover{
-              background: rgb(244, 241, 241);
+              background-color: rgb(255, 214, 0);
+              .upload-img {
+                visibility: hidden;
+              }
             }
         }
         &-folder {
           margin-right: 20px;
           .button__folder {
-            width: 138px;
-            height: 35px;
-            border-radius: 10px;
-            box-shadow: 1px 5px 23px 0px rgb(253, 253, 253);
-            background: rgb(255, 255, 255);
-            cursor: pointer;
-          }
-          .button__folder:hover{
-            background: rgb(244, 241, 241);
-          }
+              color: rgb(35, 35, 35);
+              font-family: Montserrat;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 20px;
+              letter-spacing: 7%;
+              text-align: left;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 138px;
+              height: 40px;
+              border-color: rgba(255, 255, 255, 0);
+              border-radius: 10px;
+              box-shadow: 1px 5px 23px 0px rgba(35, 35, 35, 0.08);
+              background: rgb(255, 255, 255);
+              cursor: pointer;
+              .folder-img {
+                margin-right: 10px;
+                margin-top: 5px;
+              }
+            }
+            .button__folder:hover{
+              background: rgb(246, 246, 246);
+            }
         }
         &-resycle {
-          margin-right: 300px;
+          margin-right: 130px;
           .button__resycle {
-            width: 138px;
-            height: 35px;
-            border-radius: 10px;
-            box-shadow: 1px 5px 23px 0px rgba(35, 35, 35, 0.08);
-            background: rgb(255, 255, 255);
-            cursor: pointer;
-          }
-          .button__resycle:hover{
-            background: rgb(244, 241, 241);
-          }
+            color: rgb(35, 35, 35);
+              font-family: Montserrat;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 20px;
+              letter-spacing: 7%;
+              text-align: left;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 138px;
+              height: 40px;
+              border-color: rgba(255, 255, 255, 0);
+              border-radius: 10px;
+              background: rgb(255, 255, 255);
+              cursor: pointer;
+              .resycle-img {
+                margin-right: 10px;
+                margin-top: 5px;
+              }
+            }
+            .button__resycle:hover{
+              background: rgb(246, 246, 246);
+            }
         }
         &-input {
-          padding-right: 30px;
+          margin-top: 3px;
+          padding-right: 8px;
           .input-input {
+            border-radius: 10px;
             visibility: hidden;
             height: 37px;
+            border-color: rgba(255, 255, 255, 0);
+            box-shadow: 1px 5px 23px 0px rgba(35, 35, 35, 0.08);
           }
+          .input-input:hover {
+            background: rgb(246, 246, 246);
+          }
+          .input-input[type=text]{
+            
+            padding-left: 25px;
+        }
         }
         &-search {
+          margin-top: 3px;
             margin-right: 24px;
             .button__search {
               width: 40px;
               height: 40px;
               border-radius: 20px;
-              background: rgb(255, 255, 255);
+              border-color: rgba(250, 250, 250, 0);
+              background: rgb(246, 246, 246);
               cursor: pointer;
             }
             .button__search:hover{
@@ -68,19 +129,54 @@
             }
           }
         &-wrapper {
-            display: flex;
-            width: 300px;
+            display: flex; 
             margin-right: 24px;
-            height: 35px;
-            border-radius: 10px;
+            border-color: rgba(255, 255, 255, 0.8);
             margin-top: 3px;
+            
             .button__wrapper {
+              width: 328px;
+              height: 40px;
+              color: rgb(35, 35, 35);
+              font-family: Montserrat;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 20px;
+              letter-spacing: 5%;
+              text-align: right;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              box-sizing: border-box;
+              border: 1px solid rgb(235, 235, 235);
+              border-radius: 10px;
+              background: rgba(255, 255, 255, 0.8);
               padding-left: 10px;
               padding-right: 10px;
-              border-radius: 10px;
               background: rgb(255, 255, 255);
+              font-weight: 300;
+              cursor: pointer;
+              .wrapper-img {
+                padding-left: 12px;
+                margin-top: 3px;
+              }
+              .symbol {
+                margin-left: 12px;
+                margin-right: 12px;
+                color: rgb(235, 235, 235);
+              }
+              .number {
+                margin-left: 6px;
+                font-weight: 400;
+              }
+            }
+            .button__wrapper:hover{
+              background: rgb(246, 246, 246);
             }
         }
-        
-    }
+        &-profile {
+          margin-top: 3px;
+          cursor: pointer;
+        }
+    }     
 }

@@ -1,0 +1,26 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="20" cy="20" r="20" fill="#EBEBEB"/>
+<g filter="url(#filter0_d_511_385)">
+<mask id="mask0_511_385" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="34" height="34">
+<circle cx="20" cy="20" r="16.25" fill="#F2F2F2"/>
+</mask>
+<g mask="url(#mask0_511_385)">
+<path d="M23.3752 32.5567C23.3752 41.0234 16.5117 47.8869 8.04503 47.8869C-0.421598 47.8869 -7.28516 41.0234 -7.28516 32.5567C-7.28516 24.0901 -0.421598 17.2266 8.04503 17.2266C16.5117 17.2266 23.3752 24.0901 23.3752 32.5567Z" fill="#232323"/>
+<path d="M40.6994 9.70519C40.6994 18.1718 33.8359 25.0354 25.3692 25.0354C16.9026 25.0354 10.0391 18.1718 10.0391 9.70519C10.0391 1.23856 16.9026 -5.625 25.3692 -5.625C33.8359 -5.625 40.6994 1.23856 40.6994 9.70519Z" fill="#232323"/>
+<path d="M28.6321 17.0309C28.6321 27.6988 19.984 36.3469 9.31604 36.3469C-1.35192 36.3469 -10 27.6988 -10 17.0309C-10 6.36293 -1.35192 -2.28516 9.31604 -2.28516C19.984 -2.28516 28.6321 6.36293 28.6321 17.0309Z" fill="#FFD600"/>
+<path d="M11.665 18.7598L39.61 -0.122822L56.7759 25.2816L28.831 44.1642L11.665 18.7598Z" fill="#232323"/>
+<path d="M31.7061 20.9922C31.7061 24.582 28.7959 27.4922 25.2061 27.4922C21.6162 27.4922 18.7061 24.582 18.7061 20.9922C18.7061 17.4023 21.6162 14.4922 25.2061 14.4922C28.7959 14.4922 31.7061 17.4023 31.7061 20.9922Z" fill="white"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_511_385" x="0.75" y="0.75" width="38.5" height="38.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="1.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_511_385"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_511_385" result="shape"/>
+</filter>
+</defs>
+</svg>

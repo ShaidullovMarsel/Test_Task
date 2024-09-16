@@ -14,6 +14,7 @@ const search = document.getElementById('input-input');
 
 
 
+
 sortButton.addEventListener('click', () => {
   if(dropdownSortOptions.style.display === 'none'){
     dropdownSortOptions.style.display = 'flex';
@@ -53,7 +54,7 @@ const renderList = (arr) => {
     if (obj.type == "File")
     document.getElementById('list').innerHTML += `
     <div class="item__img">
-            <img src="./img/file.png" alt="">
+            <img src="./img/file.svg" alt="">
             <div class="item__text">
                 ${obj.name}
             </div>
@@ -62,7 +63,7 @@ const renderList = (arr) => {
     else {
       document.getElementById('list').innerHTML += `
      <div class="item__img">
-            <img src="./img/folder.png" alt="">
+            <img src="./img/folder.svg" alt="">
             <div class="item__text">
                 ${obj.name}
             </div>
@@ -91,6 +92,7 @@ newFold();
 function sortByName(arr) {
   sortName.addEventListener('click', () => {
     arr.sort((a, b) => (a.name.toLowerCase() < b.name.toLowerCase()) ? -1 : 1);
+    document.getElementById('dropdownBtnSort').innerText = 'Sort by name';
     renderList(arr);
   })
 }
@@ -100,7 +102,9 @@ sortByName(data);
 function sortByType(arr){
   sortType.addEventListener('click', () => {
     arr.sort((a, b) => (a.type < b.type) ? -1 : 1);
+    document.getElementById('dropdownBtnSort').innerText = 'Sort by type';
     renderList(arr)
+    
   })
 }
 
@@ -109,6 +113,7 @@ sortByType(data);
 function sortBySize(arr){
   sortSize.addEventListener('click', () => {
     arr.sort((a, b) => (a.size - b.size) ? -1 : 1);
+    document.getElementById('dropdownBtnSort').innerText = 'Sort by size';
     renderList(arr)
   })
 }
@@ -124,6 +129,7 @@ function sortByDate(arr){
       return dateA - dateB;
     }
     arr.sort(compare);  
+    document.getElementById('dropdownBtnSort').innerText = 'Sort by date';
     renderList(arr);
   })
 }
@@ -132,10 +138,10 @@ sortByDate(data);
 
 
 buttonSearch.addEventListener('click', () => {
-  if (search.style.visibility === 'hidden') {
-    search.style.visibility = 'visible';
-  } else {
+  if (search.style.visibility === 'visible') {
     search.style.visibility = 'hidden';
+  } else {
+    search.style.visibility = 'visible';
   }
 })
 
